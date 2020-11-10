@@ -34,40 +34,24 @@ body{
 header{
     display: inline-flex;
     background-color: rgba(0,0,0,0);
+    z-index: 9999;
     width: 100%;
-    height: max-content;
+    height: 67px;
     top: 0;
     position: fixed;
-    z-index: 999;
     padding: 10px;
     transition-property: all;
     transition-duration: 1s;
     /* border-bottom: 4px solid #ff019d;
     border-top: 4px solid #ff019d; */
 }
-header nav{
-    padding-left: 50%;
-    padding-right: 20px;
+menu{
+    margin-left: -100px;
+    z-index: 999;
 }
-header nav ul li{
-    list-style: none;
-    display: inline-flex;
-    padding: 0;
-}
-header a{
-    text-decoration: none;
-    color: white;
-    padding: 10px 0 0 30px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    transition-property: all;
-    transition-duration: 1s;
-}
-header a:hover,
-header a:active{
-    color: deeppink;
-    transform: scale(1.2);
+#logo{
+    margin-left: 30%;
+    position: fixed;
 }
 *{
     scroll-behavior: smooth;
@@ -94,9 +78,10 @@ header a:active{
 }
 .intro p{
     top: 200px;
-    left: 190px;
+    left: 100px;
+    margin: auto;
     position: relative;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     animation-name: slideDown;
@@ -158,8 +143,8 @@ header a:active{
     }
 }
 .intro #book:hover{
-    background-color: gainsboro;
-    color: black;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
     border: 1px solid black;
     border-radius: 5px;
 }

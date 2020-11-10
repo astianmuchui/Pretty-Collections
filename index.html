@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <script src="https://kit.fontawesome.com/84b6428a50.js" crossorigin="anonymous"></script>
-    <title>Pretty collections--- </title>
+    <title>Pretty collections|welcome</title>
 </head>
 <body>
 <header id="nav">
-    <img src="images/rsz_logo.png" height="66.66" width="165.33">
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#msg" >Contact</a></li>
-            <li id="handbag"><a href="#product">Products</a></li>
-            <li><a href="#about">About us</a></li>
-        </ul>
-    </nav>
+    <div id="hamburger">
+        <div></div> 
+        <div></div> 
+        <div></div> 
+    </div>
+    <menu>
+
+        <div class="main_menu" id="main_menu">
+            <span id="cancel">&times;</span>
+            <nav class="navigate">
+                <ul>
+                    <li><a href="#">Home</a></li> <br> <br>
+                    <li><a href="#msg" >Contact</a></li> <br> <br>
+                    <li id="handbag"><a href="#product">Products</a></li> <br> <br>
+                    <li><a href="#about">About us</a></li> <br> <br>
+                </ul>
+            </nav>
+        </div>
+    </menu>
+    <img src="images/rsz_logo.png" height="66.66" width="165.33" id="logo"> 
 </header>
 <div class="main">
 
@@ -31,7 +43,7 @@
                 <span id="close"> &times; </span>
                 <img src="images/rsz_logo.png" height="66.66" width="165.33">
                 <h1>Book a product...Delivery within no time !</h1>
-                <a href="#"> <i class="fab fa-whatsapp"></i> Book via Whatsapp</a> <br> <br>
+                <a href="https://api.whatsapp.com/send/?phone=254711831773&text%20Hi%20there%20Got%20your%20number%20from%20the%20website&app_absent=0"> <i class="fab fa-whatsapp"></i> Book via Whatsapp</a> <br> <br>
                 <a href="mailto:kamankuranelly@gmail.com">  <i class="far fa-envelope"></i>Book via  Email</a>   <br> <br>
                 <a href="tel:+254711831773"> <i class="fas fa-phone-alt"></i> Book via Call</a>
             </div>
@@ -46,7 +58,7 @@
                 <p>Earrings</p>
             </div>
             <div class="watches">
-                <img src="images/wrist_watch.jpg" alt="" height="311" width="311.75">
+                <img src="images/watch 1.jpg" alt="" height="311" width="311.75">
                 <p>watches</p>
 
             </div>
@@ -156,6 +168,7 @@
     <span>2020 Pretty collections </span>
     <span>Design,concept and integration by <a href="mailto:astianseb730@gmail.com">Seb Astian</a></span>
 </div>
+    <script src="menu.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
