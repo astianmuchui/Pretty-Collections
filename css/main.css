@@ -1,0 +1,308 @@
+*{
+    
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    /* padding-bottom: 5px; */
+    box-shadow: 1px 1px 1px 1px rgb(20, 20, 20);
+}
+header *{
+    display: flex;
+}
+header nav{
+    position: relative;
+    top: -25px;
+    right: 50px;
+    float: right;
+}
+header nav ul li a{
+    color: white;
+    padding: 0 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.title{
+    position: relative;
+    left: 20px;
+    top: 5px;
+}   
+.main{
+    height: 100vh;
+    width: 100%;
+    background: url(../images/woman-2319820_1920.jpg) center center /cover;
+}
+.intro{
+    position: relative;
+    top: 40%;
+    left: 10px;
+    color: black;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.intro a{
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    left: 30px;
+}
+.intro a:hover{
+    background: rgba( 0,0,0,0.9);
+}
+.modal{
+    z-index: 9;
+    position: sticky;
+    top: 0;
+    height: 330px;
+    width: 400px;
+    background-color: rgb(189, 189, 189);
+    margin: 0 auto;
+    display: none;
+}
+.modal form{
+    display: block;    
+    position: relative;
+    top: 30px;
+    left: 23%;
+    margin: auto;
+    color: #000;
+}
+.modal form textarea{
+    height: 85px;
+    width: 250px;
+    background-color: rgb(110, 110, 110);
+}
+.modal .img{
+    margin: 10px 20px;
+}
+.modal form button{
+    height: max-content;
+    background-color: rgb(17, 99, 38);
+    border: transparent;
+    height: 49px;
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+    width: 270px;
+    font-size: 17px;
+}
+.modal span{
+    position: relative;
+    float: right;
+    color: rgba(136, 134, 134, 0.7);
+    right: 20px;    
+    font-size: 30px;
+    cursor: pointer;
+}
+.modal i{
+    font-size: 19px;
+    height: max-content;
+    overflow: hidden;
+    padding: 0 10px;
+    color: #000;
+}
+.modal-content{
+    display: inline-flex;
+    z-index: 9;
+    margin: 0 auto;
+}
+.showcase{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.925);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.showcase h1{
+    font-size: 40px;
+    padding: 10px 0;
+}
+.products{
+    background-color: rgba(223, 219, 219, 0.877);
+    padding: 10px 10px;  
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    text-align: center;
+    
+}
+.products div{
+    transition: all 2s ease-out;
+    background: white;
+    border: 2px solid rgba(194, 189, 189, 0.8);
+}
+.products div img{
+    width: 155.875px;
+    height: 155.5px;
+}
+.products div:hover{
+    transform: translateY(-10px);
+}
+.see-more{
+    margin-top: 20px;
+    padding: 20px 20px;
+}
+.see-more a{
+    color: white;
+    background: rgb(44, 43, 43);
+    padding: 20px 20px;
+}
+.values-wrapper{
+    padding-top: 50px;
+    height: 25vh;
+    background: rgba(204, 204, 204, 0.253);
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.values-container{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+    width: 90vw;
+    position: relative;
+
+}
+.values-container div{
+    background: transparent;
+    height: 150px;
+    width: 30vw;
+    border-right: 2px solid rgba(95, 95, 95, 0.438);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.values-container div:last-child{
+    border-right: none;
+}
+.values-container div span{
+    color: rgb(202, 20, 0);
+    font-size: 20px;
+}
+.values-container div i:hover{
+    transition: all 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transform: rotateY(360deg);
+}
+.contact{
+    padding-top: 50px;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.contact-us {
+    height: max-content;
+}
+.contact-us form{
+    height: max-content;
+    width: max-content;
+    display: inline-grid;
+    grid-template-columns: repeat(4,ifr);
+    grid-gap: 1px;
+    background: rgba(105, 105, 105, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+.contact-us form h1{
+    font-size: 30px;
+    padding :10px 0;
+}
+::placeholder{
+    opacity: 1;
+    color: black;
+}
+.contact-us form input{
+    height: 30px;
+    border:1px solid transparent;
+    width: 400px;
+    background: #ccc;
+    padding: 10px;
+}
+textarea{
+    padding:10px;
+    background: #ccc;
+    border-color: transparent;
+}
+#submit{
+    height: max-content;
+    width: max-content;
+    background-color: black;
+    color: white;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
+footer{
+    padding: 20px;
+    width: 100%;
+    background-color: black;
+    height: 32vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+footer div{
+    color: white;
+    display: block;
+}
+
+footer  li a{
+    padding: 10px;
+    font-size: 14px;
+}
+footer li {
+    padding: 5px 0;
+}
+footer li:hover,footer a:hover{
+    color: #ffccdd;
+}
+footer *{
+    text-transform: capitalize;
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+}
+.social{
+    display: inline-flex;
+}
+.social i{
+    font-size: 1.3em;
+    width: 1.6em;
+    line-height: 1.6em;
+    text-align: center;
+    color: #000;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 6px;
+}   
