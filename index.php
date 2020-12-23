@@ -145,11 +145,11 @@
                 <div class="quicklinks">
                     <h3>Quicklinks</h3> <br>
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#categories">Categories</a></li>
-                        <li><a href="pages/products.php">products</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#contact">contact us</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="pages/products.php">products</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#contact">contact us</a></li>
                     </ul>
                 </div>
                 <div class="categories">
@@ -176,6 +176,6 @@
                     <a href="#"><i class="fas fa-sms"></i></a>
                 </div>
             </footer>
-            <script src="../js/modal.js"></script>
+            <script src="js/modal.js"></script>
 </body>
 </html>

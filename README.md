@@ -1,2 +1,0 @@
-# Pretty-Collections
-ecommerce website
