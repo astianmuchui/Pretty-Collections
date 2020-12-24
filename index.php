@@ -128,7 +128,7 @@
             </section>
             <section class="contact" id="contact">
                 <div class="contact-us">
-                    <form action="../server/mail.php" method="post" enctype="multipart/form-data">
+                    <form action="server/mail.php" method="post" enctype="multipart/form-data">
                     <h1>Contact us</h1>
                         <input type="text" placeholder="name" placeholder="your name" name="name" required> <br> <br>
                          <input type="email" name="email" id="" placeholder="Email"> <br> <br>  

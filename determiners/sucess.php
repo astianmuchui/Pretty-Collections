@@ -13,7 +13,8 @@
         <div class="alert-sucess">
             <h1>Message sent to agent</h1>
         </div>
-        <a href="../pages/index.php" class="btn">Back home</a>
+        <a href="../index.php" class="btn">Back home</a>
     </div>
+    <?php include '../includes/footer.html'; ?>
 </body>
 </html>

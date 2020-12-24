@@ -195,6 +195,8 @@ footer *{
     background-color: #d0d3d8;
 }
 .contact form input{
+    border: rgb(88, 88, 88);
+    background-color: #80808085;
     height: 50px;
     width: 400px;
     padding: 10px;

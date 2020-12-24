@@ -52,10 +52,10 @@
             return false;
         }
         if(mail($toEmail,$subject,$body,$headers)){
-            header("location: ../determiners/order_sucess.php");
+            header("location: ../determiners/order_sucess.php?Message_was_sent_sucessfully-To_admin");
             return true;
         }else{
-            header("location: ../determiners/order_error.php?error_could_not_complete_request");
+            header("location: ../determiners/order_error.php?error_could_not_complete_request_to_send-mailTo_admin");
             return false;
         }
     }

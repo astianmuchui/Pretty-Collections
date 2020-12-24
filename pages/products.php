@@ -52,8 +52,8 @@
 
     </div>
 
-    <div class="contact">
-    <form action="../server/make_order.php" method="post" class="well">
+    <div class="contact" id="order">
+    <form action="../server/make_order.php" method="post" class="well" >
             <h1>Make an order</h1> <br>
            <label>Product name</label> <br> <br>
            <input type="text" placeholder="Name your product" name="order_name"> <br> <br>

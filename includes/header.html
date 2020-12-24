@@ -1,3 +1,4 @@
+<link rel="shortcut icon" href="../images/rsz_logo.png" type="image/x-icon">
 <link rel="stylesheet" href="../css/main.css">
 <header>
     <div class="title">
@@ -5,18 +6,21 @@
     </div>
     <nav>
         <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#categories">Categories</a></li>
-            <li><a href="#">products</a></li>
+            <li><a href="../index.php">home</a></li>
+            <li><a href="../index.php#categories">Categories</a></li>
+            <li><a href="../pages/products.php">products</a></li>
             <li><a href="#">about</a></li>
-            <li><a href="#contact">contact us</a></li>
+            <li><a href="../index.php#contact">contact us</a></li>
         </ul>
     </nav> 
 </header>
 <style>
+    body{
+        background: #ccc;
+    }
     .container{
         width: 100%;
-        height: 100vh;
+        height: 95vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -26,14 +30,23 @@
     h1{
         color: black;
     }
+    .container img:hover{
+        transition: all 2s ease-in;
+        transform: rotate(180deg);
+    }
     .alert-danger{
         background-color: rgb(212, 10, 10);
         padding: 40px;
-
+        align-content: center;
+        align-items: center;
+        text-align: center;
     }
     .alert-sucess{
-        background-color: rgb(32, 204, 75);
+        background-color: rgb(19, 235, 73);
         padding: 40px;
+        align-content: center;
+        align-items: center;
+        text-align: center;
     }
     .btn{
         background-color: black;
