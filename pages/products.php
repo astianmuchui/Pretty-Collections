@@ -6,9 +6,8 @@
 <head>
     <link rel="stylesheet" href="../css/products-min.css">
     <script src="https://kit.fontawesome.com/84b6428a50.js" crossorigin="anonymous"></script>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order our products online</title>
 </head>
 <body>
@@ -44,14 +43,30 @@
                     $_url = "../admin/products/".$product['product_image'];?>
              
                 <div>
-
+                <?php $new = str_replace(' ', '<br>', $product['product_name']);?>
             <img src="<?php echo $_url ?>" alt="" > <br>
-            <p><?php echo $product['product_name'];?> </p> <br>
+            <p><?php echo $new ?> </p> <br>
             <a href="mailto: kamankuranelly@gmail.com?subject=I want to order a <?php echo $product['product_name']?> &body=Hi there i would like to book a product(<?php echo $product['product_name']?>) ">Order now</a>
         </div>
         <?php endforeach ?>
 
     </div>
+
+    <div class="contact">
+    <form action="../server/make_order.php" method="post" class="well">
+            <h1>Make an order</h1> <br>
+           <label>Product name</label> <br> <br>
+           <input type="text" placeholder="Name your product" name="order_name"> <br> <br>
+           <label>Quantity</label> <br> <br>
+           <input type="number" name="ammount" id="" placeholder="quantity">
+            <br> <br>
+            <label>Phone number</label> <br> <br>
+           <input type="text" name="phone" placeholder="phone number(start with 07..)"> <br> <br>
+           <input type="submit" value="submit" name="submit">
+
+    </form>
+    </div>
+    
     <footer>
                 <div class="identity">
                     <img src="../images/rsz_logo.png" alt="" height="50" width="124">
@@ -85,10 +100,10 @@
                       </ul>  
                 </div>
                 <div class="social">
-                    <a href="#"><i class="fas fa-phone-alt"></i></a>
-                    <a href="#"><i class="far fa-envelope"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fas fa-sms"></i></a>
+                    <a href="tel:254711831773"><i class="fas fa-phone-alt"></i></a>
+                    <a href="mailto: kamankuranelly@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=254711831773&text=hi there &app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                    <a href="sms: 254711831773"><i class="fas fa-sms"></i></a>
                 </div>
             </footer>     
 </body>

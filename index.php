@@ -28,7 +28,7 @@
     </header>
     <div class="main">
         <p class="intro">
-            Your home of <br> world class beauty products <br>
+            Your home of <br> world class fashion  <br>
             <a href="#" id="trigger">order now</a>
         </p>
         
@@ -138,6 +138,7 @@
                     </form>
                 </div>
             </section>
+
             <footer>
                 <div class="identity">
                     <img src="images/rsz_logo.png" alt="" height="50" width="124">
@@ -169,12 +170,13 @@
                           <li> <i class="fas fa-map-marker"></i> chuka kenya</li>
                       </ul>  
                 </div>
-                <div class="social">
-                    <a href="#"><i class="fas fa-phone-alt"></i></a>
-                    <a href="#"><i class="far fa-envelope"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fas fa-sms"></i></a>
+                <div class="social">                  
+                    <a href="tel:254711831773"><i class="fas fa-phone-alt"></i></a>
+                    <a href="mailto: kamankuranelly@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=254711831773&text=hi there&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                    <a href="sms: 254711831773"><i class="fas fa-sms"></i></a>
                 </div>
+
             </footer>
             <script src="js/modal.js"></script>
 </body>

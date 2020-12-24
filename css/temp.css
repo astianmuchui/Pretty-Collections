@@ -1,5 +1,6 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 .products{
     width: 100vw;
@@ -27,4 +28,7 @@
     color: black;
     text-decoration: none;
     padding: 10px 20px;
+}
+.products p{
+    word-wrap: break-word;
 }
